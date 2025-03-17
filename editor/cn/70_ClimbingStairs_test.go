@@ -1,6 +1,7 @@
 package leet
 
 import (
+	"fmt"
 	"testing"
 )
 
@@ -45,11 +46,90 @@ import (
 
 // leetcode submit region begin(Prohibit modification and deletion)
 func climbStairs(n int) int {
+	f, f_1, f_2 := 1, 1, 1
 
+	for i := 2; i <= n; i++ {
+		newf := f_1 + f_2
+		f_2 = f_1
+		f_1 = newf
+		f = newf
+	}
+	return f
 }
 
 //leetcode submit region end(Prohibit modification and deletion)
 
+/*
+状态方程: f(i) = f(i-1) + f(i-2)
+边界条件: f(1) = 0, f(0) = 0
+*/
+
+/*
+递归:
+func climbStairs(n int) int {
+	var dfs func(int) int
+	dfs = func(i int) int {
+		if i <= 1 {
+			return 1
+		}
+		return dfs(i-1) + dfs(i-2)
+	}
+	return dfs(n)
+}
+时间复杂度：o(n^2)
+空间复杂度：o(n)
+*/
+
+/*
+记忆化搜索:
+func climbStairs(n int) int {
+	var dfs func(int) int
+	temp := make([]int,n+1)
+	dfs = func(i int) int {
+		if i <= 1 {
+			return 1
+		}
+		if temp[i] == 0 {
+			temp[i] = dfs(i-1)+dfs(i-2)
+		}
+		return temp[i]
+	}
+	return dfs(n)
+}
+时间复杂度: o(n)
+空间复杂度: o(n)
+*/
+
+/*
+递推:
+func climbStairs(n int) int {
+	mem := make([]int,n+1)
+	mem[0],mem[1]=1,1
+	for i := 2;i<=n;i++ {
+		mem[i] = mem[i-1]+mem[i-2]
+	}
+	return mem[n]
+}
+时间复杂度: o(n)
+空间复杂度: o(n)
+
+空间复杂度优化:
+func climbStairs(n int) int {
+	f, f_1, f_2 := 1, 1, 1
+
+	for i := 2;i<=n;i++ {
+		newf := f_1+f_2
+		f_2 = f_1
+		f_1 = newf
+		f = newf
+	}
+	return f
+}
+时间复杂度: o(n)
+空间复杂度: o(1)
+*/
+
 func TestClimbingStairs(t *testing.T) {
+	fmt.Println(climbStairs(3))
 
 }
