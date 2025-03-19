@@ -64,13 +64,13 @@ Alice 可能发出的文字信息包括：
 
 // leetcode submit region begin(Prohibit modification and deletion)
 const mod = 1_000_000_007
-const max = 100_001
+const mx = 100_001
 
-var f = [max]int{1, 1, 2, 4}
+var f = [mx]int{1, 1, 2, 4}
 var g = f
 
 func init() {
-	for i := 4; i < max; i++ {
+	for i := 4; i < mx; i++ {
 		f[i] = (f[i-1] + f[i-2] + f[i-3]) % mod
 		g[i] = (g[i-1] + g[i-2] + g[i-3] + g[i-4]) % mod
 	}
