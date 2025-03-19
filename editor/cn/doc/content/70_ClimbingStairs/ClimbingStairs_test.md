@@ -32,4 +32,4 @@
  <li><code>1 &lt;= n &lt;= 45</code></li> 
 </ul>
 
-<div><li>👍 3764</li><li>👎 0</li></div>
+<div><li>👍 3767</li><li>👎 0</li></div>

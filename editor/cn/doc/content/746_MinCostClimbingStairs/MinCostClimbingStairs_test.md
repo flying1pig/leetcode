@@ -40,4 +40,4 @@
  <li><code>0 &lt;= cost[i] &lt;= 999</code></li> 
 </ul>
 
-<div><li>👍 1629</li><li>👎 0</li></div>
+<div><li>👍 1630</li><li>👎 0</li></div>
