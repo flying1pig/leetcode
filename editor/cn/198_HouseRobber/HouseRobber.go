@@ -1,9 +1,4 @@
-package leet
-
-import (
-	"fmt"
-	"testing"
-)
+package main
 
 /**
 你是一个专业的小偷，计划偷窃沿街的房屋。每间房内都藏有一定的现金，影响你偷窃的唯一制约因素就是相邻的房屋装有相互连通的防盗系统，如果两间相邻的房屋在同一晚上被小
@@ -39,7 +34,7 @@ import (
  0 <= nums[i] <= 400
 
 
- 👍 3203 👎 0
+ 👍 3205 👎 0
 
 */
 
@@ -132,7 +127,6 @@ func rob(nums []int) int {
 空间复杂度: o(1)
 */
 
-func TestHouseRobber(t *testing.T) {
-	nums := []int{2, 1}
-	fmt.Println(rob(nums))
+func main() {
+
 }

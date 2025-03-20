@@ -1,9 +1,6 @@
-package leet
+package main
 
-import (
-	"slices"
-	"testing"
-)
+import "slices"
 
 /**
 给你一个整数数组 nums ，你可以对它进行一些操作。
@@ -45,7 +42,7 @@ import (
  1 <= nums[i] <= 10⁴
 
 
- 👍 1087 👎 0
+ 👍 1088 👎 0
 
 */
 
@@ -95,6 +92,6 @@ func rob(nums []int) int {
 空间复杂度: o(u)
 */
 
-func TestDeleteAndEarn(t *testing.T) {
+func main() {
 
 }

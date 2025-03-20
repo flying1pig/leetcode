@@ -1,9 +1,4 @@
-package leet
-
-import (
-	"fmt"
-	"testing"
-)
+package main
 
 /**
 假设你正在爬楼梯。需要 n 阶你才能到达楼顶。
@@ -40,7 +35,7 @@ import (
  1 <= n <= 45
 
 
- 👍 3764 👎 0
+ 👍 3767 👎 0
 
 */
 
@@ -129,7 +124,6 @@ func climbStairs(n int) int {
 空间复杂度: o(1)
 */
 
-func TestClimbingStairs(t *testing.T) {
-	fmt.Println(climbStairs(3))
+func main() {
 
 }

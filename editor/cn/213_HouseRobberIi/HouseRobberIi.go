@@ -1,9 +1,6 @@
-package leet
+package main
 
-import (
-	"slices"
-	"testing"
-)
+import "slices"
 
 /**
 你是一个专业的小偷，计划偷窃沿街的房屋，每间房内都藏有一定的现金。这个地方所有的房屋都 围成一圈 ，这意味着第一个房屋和最后一个房屋是紧挨着的。同时，相邻的房屋
@@ -71,13 +68,13 @@ func rob(nums []int) int {
 
 /*
 状态方程:
-    下标为0的房子偷，子问题变为: f(i) = max(f(i-1),f(i-2)+nums[i]) + nums[0], 2<=i<=n-2
-    下标为0的房子不偷, 子问题变为: f(i) = max(f(i-1),f(i-2)+nums[i]), 1<=i<=n-1
-    所以 f(i) = max(f(i-1)+f(i-2)+nums[0],f(i-1)+f(i-2))
+    下标为0的房子偷，子问题变为: f(i) = max(f(i-1),f(i-2)+nums[i]) + nums[0], 2<=i<=n-2。此时问题简化为198
+    下标为0的房子不偷, 子问题变为: f(i) = max(f(i-1),f(i-2)+nums[i]), 1<=i<=n-1。此时问题简化为198
+    答案为取上述两种情况的最大者
 边界条件:
 
 */
 
-func TestHouseRobberIi(t *testing.T) {
+func main() {
 
 }

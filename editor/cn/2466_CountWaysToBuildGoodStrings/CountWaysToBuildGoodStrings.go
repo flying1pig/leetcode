@@ -1,9 +1,4 @@
-package leet
-
-import (
-	"fmt"
-	"testing"
-)
+package main
 
 /**
 给你整数 zero ，one ，low 和 high ，我们从空字符串开始构造一个字符串，每一步执行下面操作中的一种：
@@ -210,6 +205,6 @@ func gcd(a, b int) int {
 空间复杂度: o(high/g)
 */
 
-func TestCountWaysToBuildGoodStrings(t *testing.T) {
-	fmt.Println(countGoodStrings(2, 3, 1, 2))
+func main() {
+
 }

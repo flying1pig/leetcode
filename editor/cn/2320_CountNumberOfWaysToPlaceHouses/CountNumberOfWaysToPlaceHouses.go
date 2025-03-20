@@ -1,8 +1,4 @@
-package leet
-
-import (
-	"testing"
-)
+package main
 
 /**
 一条街道上共有 n * 2 个 地块 ，街道的两侧各有 n 个地块。每一边的地块都按从 1 到 n 编号。每个地块上都可以放置一所房子。
@@ -150,6 +146,7 @@ func countHousePlacements(n int) int {
 时间复杂度: o(n)
 空间复杂度: o(1)
 */
-func TestCountNumberOfWaysToPlaceHouses(t *testing.T) {
+
+func main() {
 
 }

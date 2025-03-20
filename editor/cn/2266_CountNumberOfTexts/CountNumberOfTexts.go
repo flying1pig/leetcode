@@ -1,8 +1,4 @@
-package leet
-
-import (
-	"testing"
-)
+package main
 
 /**
 Alice 在给 Bob 用手机打字。数字到字母的 对应 如下图所示。
@@ -135,5 +131,6 @@ var g = f
 时间复杂度: o(n), 其中n是pressedKeys的长度
 空间复杂度: o(1)
 */
-func TestCountNumberOfTexts(t *testing.T) {
+func main() {
+
 }

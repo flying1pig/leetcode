@@ -30,4 +30,4 @@
  <li><code>0 &lt;= nums[i] &lt;= 400</code></li> 
 </ul>
 
-<div><li>👍 3203</li><li>👎 0</li></div>
+<div><li>👍 3205</li><li>👎 0</li></div>

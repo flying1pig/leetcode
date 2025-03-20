@@ -36,4 +36,4 @@
  <li><code>1 &lt;= nums[i] &lt;= 10<sup>4</sup></code></li> 
 </ul>
 
-<div><li>👍 1087</li><li>👎 0</li></div>
+<div><li>👍 1088</li><li>👎 0</li></div>

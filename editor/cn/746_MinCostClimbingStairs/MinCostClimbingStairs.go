@@ -1,8 +1,4 @@
-package leet
-
-import (
-	"testing"
-)
+package main
 
 /**
 给你一个整数数组 cost ，其中 cost[i] 是从楼梯第 i 个台阶向上爬需要支付的费用。一旦你支付此费用，即可选择向上爬一个或者两个台阶。
@@ -47,7 +43,7 @@ import (
  0 <= cost[i] <= 999
 
 
- 👍 1629 👎 0
+ 👍 1630 👎 0
 
 */
 
@@ -140,6 +136,6 @@ func minCostClimbingStairs(cost []int) int {
 空间复杂度: o(1)
 */
 
-func TestMinCostClimbingStairs(t *testing.T) {
+func main() {
 
 }
