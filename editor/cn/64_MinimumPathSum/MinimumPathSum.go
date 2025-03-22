@@ -39,7 +39,7 @@ import "math"
 
 */
 
-//leetcode submit region begin(Prohibit modification and deletion)
+// leetcode submit region begin(Prohibit modification and deletion)
 func minPathSum(grid [][]int) int {
 	n := len(grid[0])
 	mem := make([]int, n+1)
@@ -155,21 +155,22 @@ func minPathSum(grid [][]int) int {
 举个例子, 在计算f(1,1)时，会用到f(0,1)，但是之后就不再用到。那么干脆把f(1,1)记到f(0,1)中，这样对于f(1,2)来说，
 它需要的数据就在f(0,1)和f(0,2)中。f(1,2)算完后也可以记录到f(0,2)中。所以只需要维护一个长度为n+1的数据就够了。
 
-func minPathSum(grid [][]int) int {
-	n := len(grid[0])
-	mem := make([]int,n+1)
-	for i := range mem {
-		mem[i] = math.MaxInt
+	func minPathSum(grid [][]int) int {
+		n := len(grid[0])
+		mem := make([]int,n+1)
+		for i := range mem {
+			mem[i] = math.MaxInt
+		}
+
+		mem[1] = 0
+		for _,row := range grid {
+			for i,x := range row {
+				mem[i+1] = min(mem[i],mem[i+1])+x
+			}
+		}
+		return mem[n]
 	}
 
-	mem[1] = 0
-	for _,row := range grid {
-		for i,x := range row {
-			mem[i+1] = min(mem[i],mem[i+1])+x
-		}
-	}
-	return mem[n]
-}
 时间复杂度: o(mn)
 空间复杂度: o(n)
 */
