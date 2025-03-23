@@ -56,7 +56,7 @@ import (
 
 */
 
-//leetcode submit region begin(Prohibit modification and deletion)
+// leetcode submit region begin(Prohibit modification and deletion)
 func minimumTotal(triangle [][]int) int {
 	m := len(triangle)
 	mem := make([][]int, m+1)
@@ -145,20 +145,21 @@ func minimumTotal(triangle [][]int) int {
 
 /*
 以下递归写法更简洁:
-func minimumTotal(triangle [][]int) int {
-    n := len(triangle)
-    f := make([][]int, n)
-    for i := range f {
-        f[i] = make([]int, i+1)
-    }
-    f[n-1] = triangle[n-1]
-    for i := n - 2; i >= 0; i-- {
-        for j, x := range triangle[i] {
-            f[i][j] = min(f[i+1][j], f[i+1][j+1]) + x
-        }
-    }
-    return f[0][0]
-}
+
+	func minimumTotal(triangle [][]int) int {
+	    n := len(triangle)
+	    f := make([][]int, n)
+	    for i := range f {
+	        f[i] = make([]int, i+1)
+	    }
+	    f[n-1] = triangle[n-1]
+	    for i := n - 2; i >= 0; i-- {
+	        for j, x := range triangle[i] {
+	            f[i][j] = min(f[i+1][j], f[i+1][j+1]) + x
+	        }
+	    }
+	    return f[0][0]
+	}
 */
 func main() {
 	arr := [][]int{
