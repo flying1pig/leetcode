@@ -105,6 +105,7 @@ func abs(i int) int {
 */
 
 /*
+递归:
 func findTargetSumWays(nums []int, target int) int {
 	s := 0
 	for _, x := range nums {
@@ -155,6 +156,7 @@ func abs(i int) int {
 */
 
 /*
+递推:
 func findTargetSumWays(nums []int, target int) int {
 	s := 0
 	for _, x := range nums {
@@ -197,7 +199,6 @@ func abs(i int) int {
 
 /*
 空间优化:
-
 	func findTargetSumWays(nums []int, target int) int {
 		s := 0
 		for _, x := range nums {
@@ -235,6 +236,35 @@ func abs(i int) int {
 		return i
 	}
 
+时间复杂度: o(nm)
+空间复杂度: o(m)
+*/
+
+/*
+空间优化, 一个数组
+
+	func findTargetSumWays(nums []int, target int) int {
+	    s := 0
+	    for _, x := range nums {
+	        s += x
+	    }
+	    s -= abs(target)
+	    if s < 0 || s%2 == 1 {
+	        return 0
+	    }
+	    m := s / 2
+
+	    f := make([]int, m+1)
+	    f[0] = 1
+	    for _, x := range nums {
+	        for c := m; c >= x; c-- {
+	            f[c] += f[c-x]
+	        }
+	    }
+	    return f[m]
+	}
+
+func abs(x int) int { if x < 0 { return -x }; return x }
 时间复杂度: o(nm)
 空间复杂度: o(m)
 */
