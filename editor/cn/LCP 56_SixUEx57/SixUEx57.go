@@ -57,6 +57,11 @@ package main
 
 */
 
+/*
+题型: 网格bfs
+题目: 信物传送
+*/
+
 // leetcode submit region begin(Prohibit modification and deletion)
 func conveyorBelt(matrix []string, start []int, end []int) int {
 	n := len(matrix)
