@@ -122,20 +122,6 @@ func isPrintable(targetGrid [][]int) bool {
 	return len(colors) == 0
 }
 
-func min(a, b int) int {
-	if a < b {
-		return a
-	}
-	return b
-}
-
-func max(a, b int) int {
-	if a > b {
-		return a
-	}
-	return b
-}
-
 //leetcode submit region end(Prohibit modification and deletion)
 
 func main() {
