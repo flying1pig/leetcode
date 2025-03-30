@@ -46,6 +46,11 @@ package main
 
 */
 
+/*
+题型: dp
+题目: 统计构造好字符串的方案数
+*/
+
 // leetcode submit region begin(Prohibit modification and deletion)
 func countGoodStrings(low int, high int, zero int, one int) int {
 	mod := 1000000007

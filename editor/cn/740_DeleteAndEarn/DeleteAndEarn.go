@@ -46,6 +46,11 @@ import "slices"
 
 */
 
+/*
+题型: dp
+题目: 删除并获得点数
+*/
+
 // leetcode submit region begin(Prohibit modification and deletion)
 func deleteAndEarn(nums []int) int {
 	rob := func(nums []int) int {

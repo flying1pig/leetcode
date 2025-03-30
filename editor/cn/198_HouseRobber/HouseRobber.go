@@ -38,6 +38,11 @@ package main
 
 */
 
+/*
+题型: dp
+题目: 打家劫舍
+*/
+
 // leetcode submit region begin(Prohibit modification and deletion)
 func rob(nums []int) int {
 	m0 := 0

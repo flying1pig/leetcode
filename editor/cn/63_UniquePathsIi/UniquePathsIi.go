@@ -45,6 +45,11 @@ package main
 
 */
 
+/*
+题型: dp
+题目: 不同路径 II
+*/
+
 // leetcode submit region begin(Prohibit modification and deletion)
 func uniquePathsWithObstacles(obstacleGrid [][]int) int {
 	m, n := len(obstacleGrid), len(obstacleGrid[0])

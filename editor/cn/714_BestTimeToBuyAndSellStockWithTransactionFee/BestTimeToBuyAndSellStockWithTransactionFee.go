@@ -46,6 +46,11 @@ import "math"
 
 */
 
+/*
+题型: dp
+题目: 买卖股票的最佳时机含手续费
+*/
+
 // leetcode submit region begin(Prohibit modification and deletion)
 func maxProfit(prices []int, fee int) int {
 	n := len(prices)

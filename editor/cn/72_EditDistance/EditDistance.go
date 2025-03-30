@@ -50,6 +50,11 @@ exection -> execution (插入 'u')
 
 */
 
+/*
+题型: dp
+题目: 编辑距离
+*/
+
 // leetcode submit region begin(Prohibit modification and deletion)
 func minDistance(s, t string) int {
 	m := len(t)

@@ -48,6 +48,11 @@ col + 1) 。
 
 */
 
+/*
+题型: dp
+题目: 下降路径最小和
+*/
+
 // leetcode submit region begin(Prohibit modification and deletion)
 func minFallingPathSum(matrix [][]int) int {
 	var f func(int, int) int

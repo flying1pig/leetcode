@@ -48,6 +48,11 @@ import "math"
 
 */
 
+/*
+题型: dp
+题目: 最大子数组和
+*/
+
 // leetcode submit region begin(Prohibit modification and deletion)
 func maxSubArray(nums []int) int {
 	ans := math.MinInt

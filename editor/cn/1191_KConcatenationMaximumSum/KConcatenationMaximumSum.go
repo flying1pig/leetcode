@@ -51,6 +51,11 @@ import "math"
 
 */
 
+/*
+题型: dp
+题目: K 次串联后最大子数组之和
+*/
+
 // leetcode submit region begin(Prohibit modification and deletion)
 func kConcatenationMaxSum(arr []int, k int) int {
 	mod := 1_000_000_007

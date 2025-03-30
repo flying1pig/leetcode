@@ -48,6 +48,11 @@ package main
 
 */
 
+/*
+题型: dp
+题目: 目标和
+*/
+
 // leetcode submit region begin(Prohibit modification and deletion)
 func findTargetSumWays(nums []int, target int) int {
 	s := 0

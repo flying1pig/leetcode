@@ -56,6 +56,11 @@ import (
 
 */
 
+/*
+题型: dp
+题目: 三角形最小路径和
+*/
+
 // leetcode submit region begin(Prohibit modification and deletion)
 func minimumTotal(triangle [][]int) int {
 	m := len(triangle)

@@ -53,6 +53,11 @@ package main
 
 */
 
+/*
+题型: dp
+题目: 不同路径
+*/
+
 // leetcode submit region begin(Prohibit modification and deletion)
 func uniquePaths(m int, n int) int {
 	mem := make([]int, n+1)
@@ -150,21 +155,22 @@ func uniquePaths(m int, n int) int {
 
 /*
 优化:
-func uniquePaths(m int, n int) int {
-	mem := make([]int,n+1)
-	for i:=0;i<m;i++ {
-		for j:=0;j<n;j++ {
-			if i == 0 && j == 0 {
-				mem[1] = 1
-				continue
+
+	func uniquePaths(m int, n int) int {
+		mem := make([]int,n+1)
+		for i:=0;i<m;i++ {
+			for j:=0;j<n;j++ {
+				if i == 0 && j == 0 {
+					mem[1] = 1
+					continue
+				}
+				mem[j+1] = mem[j+1] + mem[j]
 			}
-			mem[j+1] = mem[j+1] + mem[j]
 		}
+		return mem[n]
 	}
-	return mem[n]
-}
+
 时间复杂度: o(m*n)
 空间复杂度: o(n)
 */
 func main() {}
-

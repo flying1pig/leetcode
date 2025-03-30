@@ -82,6 +82,11 @@ import (
 
 */
 
+/*
+题型: dp
+题目: 统计异或值为给定值的路径数目
+*/
+
 // leetcode submit region begin(Prohibit modification and deletion)
 func countPathsWithXorValue(grid [][]int, k int) int {
 	mod := 1_000_000_007

@@ -39,6 +39,11 @@ package main
 
 */
 
+/*
+题型: dp
+题目: 两个字符串的最小 ASCII 删除和
+*/
+
 // leetcode submit region begin(Prohibit modification and deletion)
 func minimumDeleteSum(s1 string, s2 string) int {
 	m, n := len(s1), len(s2)

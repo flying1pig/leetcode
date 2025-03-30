@@ -39,6 +39,11 @@ package main
 
 */
 
+/*
+题型: dp
+题目: 两个字符串的删除操作
+*/
+
 // leetcode submit region begin(Prohibit modification and deletion)
 func minDistance(word1, word2 string) int {
 	m, n := len(word1), len(word2)

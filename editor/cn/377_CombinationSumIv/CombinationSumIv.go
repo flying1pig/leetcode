@@ -50,6 +50,11 @@ package main
 
 */
 
+/*
+题型: dp
+题目: 组合总和 Ⅳ
+*/
+
 // leetcode submit region begin(Prohibit modification and deletion)
 func combinationSum4(nums []int, target int) int {
 	mem := make([]int, target+1)

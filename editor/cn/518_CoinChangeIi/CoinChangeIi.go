@@ -56,6 +56,11 @@ package main
 
 */
 
+/*
+题型: dp
+题目: 零钱兑换 II
+*/
+
 // leetcode submit region begin(Prohibit modification and deletion)
 func change(amount int, coins []int) int {
 	n := len(coins)

@@ -54,6 +54,11 @@ import (
 
 */
 
+/*
+题型: dp
+题目: 和为目标值的最长子序列的长度
+*/
+
 // leetcode submit region begin(Prohibit modification and deletion)
 func lengthOfLongestSubsequence(nums []int, target int) int {
 	n := len(nums)

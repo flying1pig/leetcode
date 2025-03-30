@@ -35,6 +35,11 @@ import "math"
 
 */
 
+/*
+题型: dp
+题目: 完全平方数
+*/
+
 // leetcode submit region begin(Prohibit modification and deletion)
 // 写在外面，多个测试数据之间可以共享，减少计算量
 var memo [101][10001]int

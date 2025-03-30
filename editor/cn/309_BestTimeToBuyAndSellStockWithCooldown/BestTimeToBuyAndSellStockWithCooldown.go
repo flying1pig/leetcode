@@ -43,6 +43,11 @@ import "math"
 
 */
 
+/*
+题型: dp
+题目: 买卖股票的最佳时机含冷冻期
+*/
+
 // leetcode submit region begin(Prohibit modification and deletion)
 func maxProfit(prices []int) int {
 	pre0, f0, f1 := 0, 0, math.MinInt

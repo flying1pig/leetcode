@@ -50,6 +50,11 @@ package main
 
 */
 
+/*
+题型: dp
+题目: 最长公共子序列
+*/
+
 // leetcode submit region begin(Prohibit modification and deletion)
 func longestCommonSubsequence(s, t string) int {
 	n, m := len(s), len(t)

@@ -58,6 +58,11 @@ Alice 可能发出的文字信息包括：
 
 */
 
+/*
+题型: dp
+题目: 统计打字方案数
+*/
+
 // leetcode submit region begin(Prohibit modification and deletion)
 func countTexts(pressedKeys string) int {
 	const mod = 1_000_000_007

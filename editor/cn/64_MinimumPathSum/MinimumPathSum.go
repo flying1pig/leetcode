@@ -39,6 +39,11 @@ import "math"
 
 */
 
+/*
+题型: dp
+题目: 最小路径和
+*/
+
 // leetcode submit region begin(Prohibit modification and deletion)
 func minPathSum(grid [][]int) int {
 	n := len(grid[0])

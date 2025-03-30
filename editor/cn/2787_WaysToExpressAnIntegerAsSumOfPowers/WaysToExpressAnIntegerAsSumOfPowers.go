@@ -44,6 +44,11 @@ n = n1ˣ + n2ˣ + ... + nkˣ 。
 
 */
 
+/*
+题型: dp
+题目: 将一个数字表示成幂的和的方案数
+*/
+
 // leetcode submit region begin(Prohibit modification and deletion)
 func numberOfWays(n int, x int) int {
 	f := make([]int, n+1)

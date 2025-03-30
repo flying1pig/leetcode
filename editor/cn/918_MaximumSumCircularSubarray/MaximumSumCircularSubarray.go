@@ -51,6 +51,11 @@ import "math"
 
 */
 
+/*
+题型: dp
+题目: 环形子数组的最大和
+*/
+
 // leetcode submit region begin(Prohibit modification and deletion)
 func maxSubarraySumCircular(nums []int) int {
 	maxS := math.MinInt //最大子数组和，不能为空

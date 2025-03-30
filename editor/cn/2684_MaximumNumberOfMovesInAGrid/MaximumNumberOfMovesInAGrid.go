@@ -52,6 +52,11 @@ import (
 
 */
 
+/*
+题型: dp
+题目: 矩阵中移动的最大次数
+*/
+
 // leetcode submit region begin(Prohibit modification and deletion)
 func maxMoves(grid [][]int) int {
 	var f func(int, int, int, int) int

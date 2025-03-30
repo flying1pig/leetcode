@@ -47,12 +47,28 @@ nums 已是非递减顺序的。
 
 */
 
+/*
+题型: dp
+题目: 将三个组排序
+*/
+
 // leetcode submit region begin(Prohibit modification and deletion)
 func minimumOperations(nums []int) int {
-
+	f := [4]int{}
+	for _, x := range nums {
+		f[x]++
+		f[2] = max(f[2], f[1])
+		f[3] = max(f[3], f[2])
+	}
+	return len(nums) - max(f[1], f[2], f[3])
 }
 
 //leetcode submit region end(Prohibit modification and deletion)
+
+/*
+状态方程
+	f[j]=max(f[j],f[j−1])+[j=nums[i]]
+*/
 
 func main() {
 

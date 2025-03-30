@@ -49,6 +49,11 @@ package main
 
 */
 
+/*
+题型: dp
+题目: 最长递增子序列
+*/
+
 // leetcode submit region begin(Prohibit modification and deletion)
 func lengthOfLIS(nums []int) (ans int) {
 	n := len(nums)

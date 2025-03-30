@@ -39,6 +39,11 @@ package main
 
 */
 
+/*
+题型: dp
+题目: 爬楼梯
+*/
+
 // leetcode submit region begin(Prohibit modification and deletion)
 func climbStairs(n int) int {
 	f, f_1, f_2 := 1, 1, 1

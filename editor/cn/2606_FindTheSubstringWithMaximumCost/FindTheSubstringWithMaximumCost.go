@@ -62,6 +62,11 @@ import (
 
 */
 
+/*
+题型: dp
+题目: 找到最大开销的子字符串
+*/
+
 // leetcode submit region begin(Prohibit modification and deletion)
 func maximumCostSubstring(s string, chars string, vals []int) int {
 	ans := 0

@@ -35,6 +35,11 @@ import "fmt"
 
 */
 
+/*
+题型: dp
+题目: 分割等和子集
+*/
+
 // leetcode submit region begin(Prohibit modification and deletion)
 func canPartition(nums []int) bool {
 	s := 0

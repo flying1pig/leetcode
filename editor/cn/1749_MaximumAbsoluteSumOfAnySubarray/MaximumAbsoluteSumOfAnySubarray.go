@@ -44,6 +44,11 @@ package main
 
 */
 
+/*
+题型: dp
+题目: 任意子数组和的绝对值的最大值
+*/
+
 // leetcode submit region begin(Prohibit modification and deletion)
 func maxAbsoluteSum(nums []int) int {
 	ans := 0

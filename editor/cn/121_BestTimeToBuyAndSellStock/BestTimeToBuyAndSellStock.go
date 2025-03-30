@@ -39,6 +39,11 @@ package main
 
 */
 
+/*
+题型: dp
+题目: 买卖股票的最佳时机
+*/
+
 // leetcode submit region begin(Prohibit modification and deletion)
 func maxProfit(prices []int) (ans int) {
 	minPrice := prices[0]

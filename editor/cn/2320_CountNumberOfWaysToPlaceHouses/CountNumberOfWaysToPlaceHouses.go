@@ -39,6 +39,11 @@ package main
 
 */
 
+/*
+题型: dp
+题目: 统计放置房子的方式数
+*/
+
 // leetcode submit region begin(Prohibit modification and deletion)
 func countHousePlacements(n int) int {
 	const mod = 1_000_000_007

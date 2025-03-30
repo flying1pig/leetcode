@@ -45,6 +45,11 @@ import "math"
 
 */
 
+/*
+题型: dp
+题目: 零钱兑换
+*/
+
 // leetcode submit region begin(Prohibit modification and deletion)
 func coinChange(coins []int, amount int) int {
 	n := len(coins)

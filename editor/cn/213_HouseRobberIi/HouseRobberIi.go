@@ -46,6 +46,11 @@ import "slices"
 
 */
 
+/*
+题型: dp
+题目: 打家劫舍 II
+*/
+
 // leetcode submit region begin(Prohibit modification and deletion)
 func rob(nums []int) int {
 	if len(nums) <= 3 {

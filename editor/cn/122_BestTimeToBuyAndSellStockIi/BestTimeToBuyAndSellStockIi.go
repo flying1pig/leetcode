@@ -48,6 +48,11 @@ import "math"
 
 */
 
+/*
+题型: dp
+题目: 买卖股票的最佳时机 II
+*/
+
 // leetcode submit region begin(Prohibit modification and deletion)
 func maxProfit(prices []int) int {
 	f0, f1 := 0, math.MinInt

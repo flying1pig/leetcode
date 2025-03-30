@@ -58,6 +58,11 @@ package main
 
 */
 
+/*
+题型: dp
+题目: 不相交的线
+*/
+
 // leetcode submit region begin(Prohibit modification and deletion)
 func maxUncrossedLines(s, t []int) int {
 	n, m := len(s), len(t)
